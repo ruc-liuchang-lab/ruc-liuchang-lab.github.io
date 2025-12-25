@@ -1,0 +1,146 @@
+.box-image-text .image {
+  min-height: 190px;
+  max-height: 190px;
+}
+
+.box-image-text .image img {
+  max-height: 190px;
+  margin: auto;
+}
+
+.box-simple {
+  min-height: 230px;
+}
+
+/* 在 custom.css 中重新定义这些变量，
+   会直接覆盖掉 style.blue.css 或 style.red.css 里的默认设置 
+*/
+
+:root {
+  --primary-accent: #a60627;    /* 主色调：改为深蓝色 (原本是红色 #da4d4d) */
+  --navbar-border-top: #f0d8c0; /* 导航栏顶部边框：深蓝色 (原本是深红 #a02121) */
+  --button-border: #a60627;     /* 按钮边框颜色 */
+  --link-focus: #002244;        /* 链接点击/聚焦时的颜色 */
+  --form-shadow: rgba(0, 51, 102, 0.6); /* 输入框点击时的阴影颜色 (RGBA格式) */
+  --pagination-bg: #cce0f5;     /* 分页按钮背景色：浅蓝色 (原本是浅粉 #f4cccc) */
+  --link-hover-bg: #f0d8c0;     /* 链接悬停时的背景颜色 */
+  --navbar-focus: #f0d8c0;      /* 导航栏项目聚焦时的颜色 */
+}
+
+.home-carousel {
+  position: relative;
+  background: url('../img/pic/background.png') center center repeat;
+  background-size: cover;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+/* 缩减页脚主区域的上下间距 */
+#footer {
+    padding: 30px 0 10px 0 !important; /* 原主题通常较宽，改为上下较窄 */
+}
+
+/* 缩减页脚标题的下边距 */
+#footer h4 {
+    margin-bottom: 15px !important;
+    margin-top: 0 !important;
+}
+
+/* 缩减页脚内文字段落的间距 */
+#footer p {
+    margin-bottom: 10px !important;
+}
+
+/* 隐藏不必要的水平分割线 */
+#footer hr {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+/* 缩减底部版权栏的高度 */
+#copyright {
+    padding: 15px 0 !important;
+}
+
+#copyright p {
+    margin-bottom: 0 !important;
+}
+
+/* 修改上方页脚区域（原深灰色） */
+#footer {
+    background-color: #4c4c4c !important; /* 你可以换成 #1a1a1a (更黑) 或你的主题色 */
+    color: #cccccc !important;           /* 设置文字颜色为浅灰，确保可读性 */
+    border-top: 1px solid #333;          /* 可选：加一条暗色的顶边线 */
+}
+
+/* 修改下方版权栏区域（原较浅或较深的灰色） */
+#copyright {
+    background-color: #333333 !important; /* 通常比 #footer 更深一点 */
+    color: #888888 !important;           /* 版权文字可以稍微暗一点 */
+    border-top: 1px solid #222;          /* 区分两个区域 */
+}
+
+/* 确保页脚内的链接颜色也协调 */
+#footer a {
+    color: var(--primary-accent) !important; /* 使用你定义的主题色 */
+}
+
+#footer a:hover {
+    color: #f9f6ef !important;
+}
+
+/* 1. 修改基础背景色 */
+body, #all {
+    background-color: #f9f6ef !important; /* 老花色 OldLace，一种很柔和的浅黄 */
+}
+
+/* 2. 覆盖主题自带的白色背景块 */
+.background-white {
+    background-color: #f9f6ef !important;
+}
+
+/* 3. 如果有特定区域（如实验室简介）使用了 .bar，也需要覆盖 */
+.bar.background-white {
+    background-color: #f9f6ef !important;
+}
+
+/* 4. 修改页头（如果有透明或白色背景） */
+header, .navbar, .navbar-default {
+    background-color: #f9f6ef !important;
+}
+
+/* 针对页脚中的地址和联系信息进行右对齐 */
+#footer .col-md-4:last-child {
+    text-align: right;
+    float: right; /* 确保在桌面端靠最右侧 */
+}
+
+/* 确保地址内的段落和标题也靠右 */
+#footer .col-md-4:last-child h4,
+#footer .col-md-4:last-child p,
+#footer .col-md-4:last-child .address {
+    text-align: right;
+}
+
+/* 调整按钮在右对齐时的间距 */
+#footer .col-md-4:last-child .btn {
+    float: right;
+    margin-top: 10px;
+}
+
+/* 针对页脚（Footer）中地址栏文字的字号调整 */
+#footer .col-md-4:last-child p, 
+#footer .col-md-4:last-child .address {
+    font-size: 16px !important;  /* 你可以根据需要调整数值，默认通常是 14px */
+    line-height: 1.6;           /* 适当增加行高，让大字号看起来不拥挤 */
+}
+
+/* 如果你想让“CONTACT”这个标题也变大 */
+#footer .col-md-4:last-child h4 {
+    font-size: 20px !important;
+}
+/* 隐藏页脚地址栏下方的联系我们按钮 */
+#footer .col-md-4:last-child a.btn-template-main {
+    display: none !important;
+}

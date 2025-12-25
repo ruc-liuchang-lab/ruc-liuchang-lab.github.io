@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Universal</title>
+    <link>https://ruc-liuchang-lab.github.io/tags/</link>
+    <description>Recent content in Tags on Universal</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 22 Dec 2025 10:00:00 +0800</lastBuildDate>
+    <atom:link href="https://ruc-liuchang-lab.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Members</title>
+      <link>https://ruc-liuchang-lab.github.io/tags/members/</link>
+      <pubDate>Mon, 22 Dec 2025 10:00:00 +0800</pubDate>
+      <guid>https://ruc-liuchang-lab.github.io/tags/members/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Team</title>
+      <link>https://ruc-liuchang-lab.github.io/tags/team/</link>
+      <pubDate>Mon, 22 Dec 2025 10:00:00 +0800</pubDate>
+      <guid>https://ruc-liuchang-lab.github.io/tags/team/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
