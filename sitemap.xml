@@ -2,36 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ruc-liuchang-lab.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-12-22T19:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://ruc-liuchang-lab.github.io/join_us/</loc>
+    <loc>http://localhost:1313/join_us/</loc>
     <lastmod>2025-12-22T19:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://ruc-liuchang-lab.github.io/news/</loc>
+    <loc>http://localhost:1313/news/</loc>
     <lastmod>2025-12-22T18:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://ruc-liuchang-lab.github.io/publications/</loc>
+    <loc>http://localhost:1313/publications/</loc>
     <lastmod>2025-12-22T17:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://ruc-liuchang-lab.github.io/categories/about/</loc>
+    <loc>http://localhost:1313/categories/about/</loc>
     <lastmod>2025-12-22T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://ruc-liuchang-lab.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-12-22T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://ruc-liuchang-lab.github.io/tags/members/</loc>
+    <loc>http://localhost:1313/tags/members/</loc>
     <lastmod>2025-12-22T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://ruc-liuchang-lab.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-12-22T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://ruc-liuchang-lab.github.io/tags/team/</loc>
+    <loc>http://localhost:1313/tags/team/</loc>
     <lastmod>2025-12-22T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://ruc-liuchang-lab.github.io/team/</loc>
+    <loc>http://localhost:1313/team/</loc>
     <lastmod>2025-12-22T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://ruc-liuchang-lab.github.io/intro/</loc>
+    <loc>http://localhost:1313/intro/</loc>
   </url>
 </urlset>
