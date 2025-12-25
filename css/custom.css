@@ -22,7 +22,7 @@
   --button-border: #a60627;     /* 按钮边框颜色 */
   --link-focus: #002244;        /* 链接点击/聚焦时的颜色 */
   --form-shadow: rgba(0, 51, 102, 0.6); /* 输入框点击时的阴影颜色 (RGBA格式) */
-  --pagination-bg: #cce0f5;     /* 分页按钮背景色：浅蓝色 (原本是浅粉 #f4cccc) */
+  --pagination-bg: #cce0f5;     /* 分页按钮背景色 */
   --link-hover-bg: #f0d8c0;     /* 链接悬停时的背景颜色 */
   --navbar-focus: #f0d8c0;      /* 导航栏项目聚焦时的颜色 */
 }
@@ -306,7 +306,7 @@ header, .navbar, .navbar-default {
 /* 3. 特别处理被选中的“红块”（li.active）和 悬停块 */
 .navbar ul.nav li.active a, 
 .navbar ul.nav li a:hover {
-    background-color: #a01a20 !important; /* 确保颜色统一 */
+/* 确保颜色统一 */
     color: #ffffff !important;
     height: 80px !important;               /* 确保红块完全填满，不留缝隙 */
     border-bottom: none !important;        /* 移除可能存在的底线 */
@@ -384,4 +384,71 @@ header, .navbar, .navbar-default {
     top: 50%;
     transform: translateY(-50%);
     bottom: auto !important;
+}
+
+/* 1. 强制拉开文字和图片的间距 */
+.carousel-text-wrapper {
+    margin-right: 80px !important; /* 增加右边距，把图片向右推 */
+    margin-bottom: 30px;           /* 增加下方边距 */
+    max-width: 500px;              /* 限制文字宽度，防止横跨整个屏幕 */
+}
+
+/* 3. 布局对齐（如果是 Flex 布局） */
+.carousel-caption .row {
+    display: flex !important;
+    align-items: center !important; /* 文字和图片垂直居中对齐 */
+    justify-content: center;
+}
+
+/* ================================================================
+   首页轮播图 (Carousel) 自定义
+   ================================================================ */
+
+/* 1. 调整整个轮播图区域的容器高度 */
+#main-slider {
+    height: 600px !important;    /* 强制整个轮播图区域高度为 600px */
+    overflow: hidden;             /* 隐藏超出部分 */
+    background-color: #f7f7f7;    /* 可选：背景色，防止图片加载前有空隙 */
+}
+
+/* 2. 强制每一张 Slide 的容器高度与父级一致 */
+#main-slider .item,
+#main-slider .item .container,
+#main-slider .item .row {
+    height: 600px !important;
+    display: flex !important;
+    align-items: center;          /* 确保文字和图片垂直居中 */
+}
+
+/* 3. 强制图片长宽一致且不拉伸 */
+#main-slider .item img {
+    /* 强制图片显示尺寸 */
+    width: 600px !important;      /* 你可以根据需要调整宽度 */
+    height: 450px !important;     /* 你可以根据需要调整高度 */
+    
+    /* 核心属性：防止变形 */
+    object-fit: cover !important; /* 像裁剪一样填充，不会拉伸图片 */
+    object-position: center !important; /* 居中显示图片主体 */
+    
+    /* 调整图片位置（例如向右移动） */
+    margin-left: 50px; 
+    border-radius: 8px;           /* 可选：圆角效果 */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* 可选：给图片加点阴影 */
+}
+
+/* 4. 增大文字与图片之间的间距 (Gap) */
+#main-slider .item .col-sm-5, 
+#main-slider .item .col-md-5 {
+    padding-right: 100px !important; /* 增加文字右侧的内边距，推开图片 */
+}
+
+/* 5. 移动端适配：手机上高度自动调整，防止图片被截断过多 */
+@media (max-width: 768px) {
+    #main-slider, 
+    #main-slider .item,
+    #main-slider .item img {
+        height: auto !important;
+        width: 100% !important;
+        margin-left: 0;
+    }
 }
